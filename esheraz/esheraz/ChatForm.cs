@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace esheraz
 {
-    public partial class Form1 : Form
+    public partial class ChatForm : Form
     {
         Generator gen;
-        public Form1()
+        public ChatForm()
         {
            
             InitializeComponent();
@@ -24,6 +24,11 @@ namespace esheraz
         {
             chatik.Text = gen.AddAnswer(gen.GenerateAnswer(PoleVvoda.Text));
                 PoleVvoda.Text = "";
+        }
+
+        private void ChatForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
